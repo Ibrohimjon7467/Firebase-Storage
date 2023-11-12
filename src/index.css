@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .site-container {
+        @apply max-w-5xl mx-auto py-1;
+    }
+
+    @media (max-width: 670px) {
+        .res {
+            @apply flex flex-col
+        }
+        header {
+            @apply p-5
+        }
+    }
+    @media (max-width: 477px) {
+        ul {
+            @apply flex flex-wrap justify-center
+        }
+    }
+}
+::-webkit-scrollbar {
+    width: 0;
+}
